@@ -79,7 +79,7 @@ RUN chmod +x phpunit-7.0.2.phar
 RUN mv phpunit-7.0.2.phar /usr/local/bin/phpunit
 
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-
+RUN echo "download"
 ENV GITUSER=UMMS-Biocore
 RUN git clone https://github.com/${GITUSER}/dolphinnext.git /var/www/html/dolphinnext
 
@@ -113,6 +113,20 @@ RUN mkdir -p /usr/local/gcloud \
   && tar -C /usr/local/gcloud -xvf /tmp/google-cloud-sdk.tar.gz \
   && /usr/local/gcloud/google-cloud-sdk/install.sh
 ENV PATH $PATH:/usr/local/gcloud/google-cloud-sdk/bin
+
+# nodejs & mongodb
+RUN apt-get update
+RUN apt-get install apt-transport-https
+RUN apt-get sudo
+RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs
+RUN npm install nodemon -g
+RUN npm install -g n
+RUN sudo n 10.16.0
+RUN PATH="$PATH"
+RUN sudo apt install -y mongodb
+
+
 
 RUN echo "DONE!"
 

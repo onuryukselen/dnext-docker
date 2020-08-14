@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"dlogin.accesstokens"}],"uuid":"bcce95b67dd8425f8a2f1c5a29a5c16e"}

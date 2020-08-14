@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"dmeta-skin.reviews"},{"v":{"$numberInt":"2"},"unique":true,"key":{"tour":{"$numberInt":"1"},"user":{"$numberInt":"1"}},"name":"tour_1_user_1","ns":"dmeta-skin.reviews","background":true}],"uuid":"3290b6b2b8024b09aef41b321d0ef2d6"}

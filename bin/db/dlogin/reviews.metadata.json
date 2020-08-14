@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"dlogin.reviews"},{"v":{"$numberInt":"2"},"unique":true,"key":{"tour":{"$numberInt":"1"},"user":{"$numberInt":"1"}},"name":"tour_1_user_1","ns":"dlogin.reviews","background":true}],"uuid":"ed0eb6a9ad1f43538443049b6427a6cd"}

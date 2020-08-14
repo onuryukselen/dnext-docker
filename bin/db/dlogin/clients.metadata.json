@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"dlogin.clients"}],"uuid":"e41e5cfb490d4bf9aadf4a4a9141f7e4"}

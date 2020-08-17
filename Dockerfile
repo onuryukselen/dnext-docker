@@ -121,7 +121,7 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 RUN apt-get install -y nodejs
 RUN npm install nodemon -g
 RUN npm install -g n
-RUN n 10.16.0
+RUN n 14.2.0
 RUN PATH="$PATH"
 
 # mongodb  https://github.com/docker-library/mongo/blob/1fe97dd9ab8e8db7224a84345583bb415d83f602/4.4-rc/Dockerfile
